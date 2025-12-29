@@ -1,0 +1,118 @@
+/* Body and container */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Quiz container */
+.quiz-container {
+    background: #ffffff;
+    padding: 30px;
+    width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Quiz title */
+.quiz-container h1 {
+    text-align: center;
+    color: #333333;
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+/* Each question block */
+.question {
+    margin-bottom: 20px;
+}
+
+/* Question text */
+.question p {
+    font-size: 18px;
+    color: #111111;       /* Dark color to ensure visibility */
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+/* Options container */
+.options label {
+    display: block;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    border: 1px solid #ddd;
+    transition: 0.2s;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    color: #222222;
+}
+
+/* Hover effect for options */
+.options label:hover {
+    background-color: #e0e0ff;
+    border-color: #2575fc;
+}
+
+/* Radio buttons spacing */
+.options input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Submit button */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #2575fc;
+    color: #ffffff;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover effect for button */
+button:hover {
+    background-color: #1a5ed8;
+}
+
+/* Result display */
+#result {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #1a1a1a;
+}
+
+/* Responsive for small screens */
+@media screen and (max-width: 600px) {
+    .quiz-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .question p {
+        font-size: 16px;
+    }
+
+    .options label {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    #result {
+        font-size: 18px;
+    }
+}
